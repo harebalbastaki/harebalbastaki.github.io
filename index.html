@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Our App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 1. Base Setup & Dark Theme Background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #121212; /* Deep dark gray */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* 2. Container for the buttons */
+        .button-container {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+            flex-wrap: wrap; /* Allows stacking on very small screens */
+            justify-content: center;
+        }
+
+        /* 3. Button Styling */
+        .store-btn {
+            display: flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #000000; /* Black background standard for store badges */
+            color: #ffffff;
+            border: 1px solid #333333; /* Subtle border to pop against dark bg */
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            min-width: 180px;
+        }
+
+        /* Hover Effect */
+        .store-btn:hover {
+            transform: translateY(-2px);
+            background-color: #222222;
+            border-color: #555555;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+        }
+
+        /* 4. Icon Styling */
+        .store-btn i {
+            font-size: 28px;
+            margin-right: 12px;
+        }
+
+        /* 5. Text Styling inside button */
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .small-text {
+            font-size: 10px;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        .big-text {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Google Play specific icon color adjustment (optional) */
+        /* Remove this if you want the icon to remain white */
+        .fa-google-play {
+            background: linear-gradient(to bottom right, #4285F4, #34A853, #FBBC05, #EA4335);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="#" class="store-btn">
+            <i class="fab fa-apple"></i>
+            <div class="btn-text">
+                <span class="small-text">Download on the</span>
+                <span class="big-text">App Store</span>
+            </div>
+        </a>
+
+        <a href="#" class="store-btn">
+            <i class="fab fa-google-play"></i>
+            <div class="btn-text">
+                <span class="small-text">Get it on</span>
+                <span class="big-text">Google Play</span>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
